@@ -12,29 +12,31 @@
 <body>
    <div class="container">
         <h1>TODO List</h1>
-        <section class="input-area">
-            <input type="text" id="task-input" />
+
+        <form class="input-area">
+            <input type="text" type="reset" id="task-input"  required placeholder="Write Here"/>
             <button id="add-button">+</button>
-        </section>
+        </form>
 
         <section class="task-area">
             <div class="task-tabs">
                 <div id="under-line"></div>
-                <div>
+                <div id="all">
                     All
                 </div>
-                <div>
+                <div id="not-done">
                     Not Done
                 </div>
-                <div>
+                <div id="done">
                     Done
                 </div>
             </div>
+
             <div id="task-board">
-              
-            </div>  
+               
+            </div>
        </section>
-        
+
 
    </div>
 
