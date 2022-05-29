@@ -36,3 +36,11 @@
     border-bottom: 2px solid black;
     padding: 10px;
 }
+
+.pagenation{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    
+}
+
