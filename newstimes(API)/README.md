@@ -1,6 +1,5 @@
 ## 뉴스타임즈
-URL https://github.com/yezee-e/clone-coding.git
-
+**URL** https://yezee-newstimes.netlify.app/
 <br/>
 
 ### 기능
