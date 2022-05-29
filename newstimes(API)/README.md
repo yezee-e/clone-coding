@@ -14,6 +14,7 @@ URL https://github.com/yezee-e/clone-coding.git
 <br/>
 
 ### 사용한 기술
+***
 * HTML
 * css
 * javascript ES6
