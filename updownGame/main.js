@@ -35,17 +35,18 @@ function play() {
 
    if(userValue<1 || userValue>50){
        resultArea.textContent ="1과 50사이 숫자를 입력해 주세요"
-       return
+       return;
    }
 
    if(history.includes(userValue)){
        resultArea.textContent ="이미 입력한 숫자입니다 다른 숫자를 입력해 주세요"
-       return
+       return;
    }
 
-   chances --
+   chances --;
    chanceArea.textContent=`남은기회:${chances}번`
    console.log("chance",chances)
+
 
    if(userValue < computerNum){
        resultArea.textContent ="UP!!!"
@@ -55,21 +56,23 @@ function play() {
        
    }else{
        resultArea.textContent="딩동댕동~~"  
-       gameOver = true
+       playButton.disabled=true
       
+   }
+
+    if(chances == 0){
+    gameOver=true
+   }else{
+    
+   }
+   if(gameOver==true){
+    // playButton.disabled=true
+    chances=5
+
    }
 
    history.push(userValue)
    console.log(history)
-
-       if(chances==0){
-           gameOver=true
-           
-       }
-       if(gameOver ==true){ 
-           playButton.disabled =true
-      
-   }
 }
 
 function reset(){
@@ -79,14 +82,15 @@ function reset(){
     pickRandomNum()
 
     resultArea.textContent="게임을 시작하지"
-
-    gameOver = false;
-  playButton.disabled = false;
-  chances = 5;
-  history=[]
-  chanceArea.textContent=`남은기회:${chances}번`
-
-
+    chanceArea.textContent="남은기회:5번"
+    
+    playButton.disabled=false
+    chances=5
+    history=[]
+    
+    
 }
 
 pickRandomNum()
+
+
