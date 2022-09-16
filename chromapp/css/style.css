@@ -1,9 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&display=swap');
+
 .hidden {
   display: none;
 }
 
 body {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: 'Nunito', sans-serif;
 }
 
 img {
@@ -19,7 +21,7 @@ img {
 }
 
 #clock {
-  font-size: 120px;
+  font-size: 450%;
   font-weight: bold;
 }
 
@@ -29,6 +31,10 @@ img {
   right: 0;
   margin: 20px;
   opacity: 0.8;
+}
+
+#weather span:first-child {
+  padding-right: 10px;
 }
 .container {
   display: flex;
@@ -76,11 +82,12 @@ img {
   font-weight: bolder;
   color: #6d6f71;
   border: none;
+  font-weight: 600;
 }
 
 .input-area {
-  width: 400px;
-  height: 35px;
+  width: 400%;
+  height: 35%;
   text-align: center;
   padding-top: 20px;
   border-bottom: 5px double rgb(255, 255, 255);
@@ -98,8 +105,12 @@ img {
   /* input테두리없애기 */
 }
 
+#todo-list ul {
+  text-align: center;
+}
+
 #todo-list li {
-  font-size: 25px;
+  font-size: 20px;
   margin-top: 10px;
   font-weight: bolder;
 }
