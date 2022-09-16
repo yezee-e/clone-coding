@@ -32,6 +32,7 @@ function pickRandomNum() {
 
 function play() {
    const userValue=userInput.value
+   
 
    if(userValue<1 || userValue>50){
        resultArea.textContent ="1과 50사이 숫자를 입력해 주세요"
