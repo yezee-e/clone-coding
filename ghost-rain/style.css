@@ -15,7 +15,7 @@ h1 {
 }
 
 .bg-img {
-  width: 100%;
+  width: 800px;
   height: 500px;
 
   background: url('./img/bg.png') no-repeat;
