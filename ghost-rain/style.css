@@ -14,10 +14,15 @@ h1 {
   justify-content: space-between;
 }
 
+.size {
+  width: 800px;
+  box-sizing: border-box;
+}
 .bg-img {
   width: 800px;
   height: 500px;
 
+  /* 배경에 적용되는 값들을 한번에 나열할 수 있디 */
   background: url('./img/bg.png') no-repeat;
   background-size: cover;
 
@@ -36,15 +41,15 @@ h1 {
   left: 50%;
 }
 
-.stop {
+#hero.stop {
   background-position: 0px 0px;
 }
 
-.right {
+#hero.right {
   background-position: -105px 0px;
 }
 
-.left {
+#hero.left {
   background-position: -70px 0px;
 }
 

@@ -1,23 +1,21 @@
-document.addEventListener('keydown', function (e) {
-  //키 누르면 발생할 동작
+document.addEventListener('keydown', keydownHero);
 
-  const heroLeft = getComputedStyle(hero).left;
+function keydownHero(e) {
+  const heroLeft = getComputedStyle(heroElement).left; //dom의 css가져오기
   const heroLeftWithoutPx = parseInt(heroLeft.split('px')[0]);
 
   if (
     (heroLeftWithoutPx - 10 <= 0 && e.keyCode === 37) ||
-    (heroLeftWithoutPx + 10 < BG_WIDTH - HERO_WIDTH && e.keyCode === 39)
+    (heroLeftWithoutPx + 10 > BG_WIDTH - HERO_WIDTH && e.keyCode === 39)
   ) {
     return;
   }
 
   if (e.keyCode === 37) {
     //왼쪽키
-    hero.style.left = heroLeftWithoutPx - 10 + 'px';
-    console.log(heroLeftWithoutPx - 10 + 'px');
+    heroElement.style.left = heroLeftWithoutPx - 10 + 'px';
   } else if (e.keyCode === 39) {
     //오른쪽키
-    hero.style.left = heroLeftWithoutPx + 10 + 'px';
-    console.log(heroLeftWithoutPx + 10 + 'px');
+    heroElement.style.left = heroLeftWithoutPx + 10 + 'px';
   }
-});
+}

@@ -1,2 +1,2 @@
-// hero.className = 'right';
-// hero.style.left = '30px';
+// heroElement.className = 'right';
+// heroElement.style.left = '30px';

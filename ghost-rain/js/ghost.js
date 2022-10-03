@@ -42,6 +42,7 @@ let createGhost = () => {
     //4.다시할당
   }, 100);
 };
+
 function killGhost(ghostElement) {
   ghostElement.classList.add('die');
 

@@ -7,5 +7,5 @@ const GHOST_HEIGHT = 54;
 const HERO_WIDTH = 35;
 const HERO_HEIGHT = 54;
 
-const hero = document.querySelector('#hero');
+const heroElement = document.querySelector('#hero');
 const bgElement = document.querySelector('.bg-img');
